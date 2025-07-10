@@ -79,23 +79,47 @@ const Footer = () => {
             <div className="space-y-2 sm:space-y-3">
               <div className="flex items-start space-x-2 sm:space-x-3">
                 <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400 mt-0.5 flex-shrink-0" />
-                <div className="text-slate-300 responsive-text-xs sm:responsive-text-sm">
-                  <p>123 Industrial Area</p>
-                  <p>Sector 15, Gurgaon</p>
-                  <p>Haryana 122001, India</p>
+                <div className="text-slate-300 responsive-text-xs sm:responsive-text-sm flex flex-col">
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/maps/place/17%C2%B040'00.4%22N+75%C2%B055'54.6%22E/@17.6637231,75.92629,1415m/data=!3m1!1e3!4m4!3m3!8m2!3d17.6667778!4d75.9318333?hl=en&entry=ttu&g_ep=EgoyMDI1MDcwNy4wIKXMDSoASAFQAw%3D%3D"
+                  >
+                    C-14, MIDC, Akkalkot Road,
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/maps/place/17%C2%B040'00.4%22N+75%C2%B055'54.6%22E/@17.6637231,75.92629,1415m/data=!3m1!1e3!4m4!3m3!8m2!3d17.6667778!4d75.9318333?hl=en&entry=ttu&g_ep=EgoyMDI1MDcwNy4wIKXMDSoASAFQAw%3D%3D"
+                  >
+                    Solapur-413003,
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/maps/place/17%C2%B040'00.4%22N+75%C2%B055'54.6%22E/@17.6637231,75.92629,1415m/data=!3m1!1e3!4m4!3m3!8m2!3d17.6667778!4d75.9318333?hl=en&entry=ttu&g_ep=EgoyMDI1MDcwNy4wIKXMDSoASAFQAw%3D%3D"
+                  >
+                    India
+                  </a>
                 </div>
               </div>
               <div className="flex items-center space-x-2 sm:space-x-3">
                 <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400 flex-shrink-0" />
-                <span className="text-slate-300 responsive-text-xs sm:responsive-text-sm">
-                  +91 123 456 7890
-                </span>
+                <div className="text-slate-300 responsive-text-xs sm:responsive-text-sm flex flex-col">
+                  <a target="_blank" href="tel:+918793607697">
+                    +91 8793607697
+                  </a>
+                  <a target="_blank" href="tel:+8669666060">
+                    +91 8669666060
+                  </a>
+                </div>
               </div>
               <div className="flex items-center space-x-2 sm:space-x-3">
                 <Mail className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400 flex-shrink-0" />
-                <span className="text-slate-300 responsive-text-xs sm:responsive-text-sm break-all">
-                  info@shubhamplastic.com
-                </span>
+                <a
+                  href="mailto:shubhamplastic6060@gmail.com"
+                  target="_blank"
+                  className="text-slate-300 responsive-text-xs sm:responsive-text-sm break-all"
+                >
+                  shubhamplastic6060@gmail.com
+                </a>
               </div>
               <div className="flex items-start space-x-2 sm:space-x-3">
                 <Clock className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400 mt-0.5 flex-shrink-0" />

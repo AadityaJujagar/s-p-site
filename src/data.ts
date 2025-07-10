@@ -1419,7 +1419,7 @@ export const categoryData: Record<string, Product[]> = {
         {
           id: "pvc-v2.1",
           size: "63",
-          packing: "3.7 kg",
+          packing: "3.5 kg",
           rate: "₹468",
         },
         {
@@ -1437,7 +1437,7 @@ export const categoryData: Record<string, Product[]> = {
         {
           id: "pvc-v2.4",
           size: "110",
-          packing: "7.5 kg",
+          packing: "8.5 kg",
           rate: "₹1138",
         },
         {

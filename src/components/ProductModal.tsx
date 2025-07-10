@@ -82,8 +82,15 @@ const ProductModal: React.FC<ProductModalProps> = ({
                         Size
                       </th>
                       <th className="px-3 sm:px-6 py-2 sm:py-3 text-center font-semibold responsive-text-xs md:responsive-text-sm">
-                        Packing
+                        {[
+                          "EcoDrain Pipes",
+                          "PVC Pipe (Kisan Gold)",
+                          "PVC Pipe (Jay Kisan)",
+                        ].includes(product.name)
+                          ? "Weight"
+                          : "Packing"}
                       </th>
+
                       {/* <th className="px-3 sm:px-6 py-2 sm:py-3 font-semibold responsive-text-xs md:responsive-text-sm text-center">
                         Rate / Unit
                       </th> */}

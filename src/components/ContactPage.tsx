@@ -5,21 +5,20 @@ const ContactPage = () => {
     {
       icon: <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-plumbing-primary" />,
       title: "Address",
-      details: [
-        "123 Industrial Area, Phase-2",
-        "Mumbai, Maharashtra 400001",
-        "India",
-      ],
+      details: ["C-14, MIDC, Akkalkot Road, ", "Solapur-413003, ", "India"],
+      link: "https://www.google.com/maps/place/17%C2%B040'00.4%22N+75%C2%B055'54.6%22E/@17.6637231,75.92629,1415m/data=!3m1!1e3!4m4!3m3!8m2!3d17.6667778!4d75.9318333?hl=en&entry=ttu&g_ep=EgoyMDI1MDcwNy4wIKXMDSoASAFQAw%3D%3D",
     },
     {
       icon: <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-plumbing-primary" />,
       title: "Phone",
-      details: ["+91 123 456 7890", "+91 987 654 3210"],
+      details: ["+91 8793607697", "+91 8669666060"],
+      link: ["#", "#"],
     },
     {
       icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-plumbing-primary" />,
       title: "Email",
-      details: ["info@shubhamplastic.com", "sales@shubhamplastic.com"],
+      details: ["shubhamplastic6060@gmail.com"],
+      link: "mailto:shubhamplastic6060@gmail.com",
     },
   ];
 
@@ -67,17 +66,23 @@ const ContactPage = () => {
                     className="flex items-start space-x-3 sm:space-x-4 p-4 sm:p-6 bg-gray-50 rounded-lg"
                   >
                     <div className="flex-shrink-0 mt-1">{info.icon}</div>
-                    <div>
+                    <div className="flex flex-col">
                       <h3 className="responsive-text-base md:responsive-text-lg font-semibold text-plumbing-dark mb-1 sm:mb-2">
                         {info.title}
                       </h3>
                       {info.details.map((detail, detailIndex) => (
-                        <p
+                        <a
+                          href={
+                            Array.isArray(info.link)
+                              ? info.link[detailIndex] || "#"
+                              : info.link
+                          }
+                          target="_blank"
                           key={detailIndex}
                           className="responsive-text-sm md:responsive-text-base text-plumbing-gray"
                         >
                           {detail}
-                        </p>
+                        </a>
                       ))}
                     </div>
                   </div>
@@ -87,18 +92,20 @@ const ContactPage = () => {
               {/* Quick Contact Buttons */}
               <div className="mt-6 sm:mt-8 space-y-3 sm:space-y-4">
                 <a
-                  href="tel:+911234567890"
-                  className="w-full bg-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-200 flex items-center justify-center responsive-text-base"
+                  href="tel:+918669666060"
+                  target="_blank"
+                  className="w-full px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold flex items-center border-2 border-plumbing-primary hover:text-white hover:bg-plumbing-primary justify-center responsive-text-base text-plumbing-primary"
                 >
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                  Call Now: +91 123 456 7890
+                  Call Now: +91 8669666060
                 </a>
                 <a
-                  href="mailto:info@shubhamplastic.com"
-                  className="w-full border-2 border-plumbing-primary text-plumbing-primary px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-plumbing-primary hover:text-white transition-colors duration-200 flex items-center justify-center responsive-text-base"
+                  href="https://wa.me/8793607697"
+                  target="_blank"
+                  className="w-full border-2  bg-green-600 text-white hover:bg-green-700  px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center responsive-text-base"
                 >
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                  Email Us
+                  WhatsApp: +91 8793607697
                 </a>
               </div>
             </div>
@@ -114,14 +121,14 @@ const ContactPage = () => {
               Visit Our Office
             </h2>
             <p className="responsive-text-base md:responsive-text-lg text-plumbing-gray">
-              Located in the heart of Mumbai's industrial area
+              Located in the heart of Solapur's industrial area
             </p>
           </div>
 
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="h-64 sm:h-80 md:h-96 lg:h-[28rem]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.3827108894847!2d72.8777!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9be7923c9d7%3A0x3f86b4b5a6a66b47!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1831.697741572253!2d75.9313504291895!3d17.666269081958404!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDQwJzAwLjQiTiA3NcKwNTUnNTQuNiJF!5e1!3m2!1sen!2sin!4v1752134913669!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -129,7 +136,7 @@ const ContactPage = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Shubham Plastic Office Location"
-              />
+              ></iframe>
             </div>
           </div>
         </div>

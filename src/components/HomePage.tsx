@@ -7,9 +7,6 @@ import {
   CheckCircle,
   ArrowRight,
   Star,
-  Users,
-  Clock,
-  Globe,
   Shell,
   Bolt,
   Cog,
@@ -301,18 +298,19 @@ const HomePage = () => {
             support
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="bg-gradient-to-r from-vibrant-blue to-vibrant-indigo text-white px-8 py-4 rounded-lg font-semibold hover:from-vibrant-indigo hover:to-vibrant-purple transition-all duration-200 shadow-glow"
-            >
-              Get Quote Now
-            </Link>
             <a
-              href="tel:+911234567890"
+              href="tel:+918669666060"
+              target="_blank"
+              className="bg-gradient-to-r from-vibrant-blue to-vibrant-indigo text-gray-50 px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200"
+            >
+              Call Now: +91 8669666060
+            </a>
+            <a
+              href="https://wa.me/8793607697"
               target="_blank"
               className="border-2 border-gray-400 text-gray-300 px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200"
             >
-              Call Now: +91 123 456 7890
+              WhatsApp: +91 8793607697
             </a>
           </div>
         </div>
