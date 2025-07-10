@@ -80,28 +80,28 @@ const HomePage = () => {
     },
   ];
 
-  const stats = [
-    {
-      icon: <Users className="w-8 h-8 text-vibrant-blue" />,
-      number: "10,000+",
-      label: "Happy Customers",
-    },
-    {
-      icon: <Clock className="w-8 h-8 text-vibrant-emerald" />,
-      number: "20+",
-      label: "Years Experience",
-    },
-    {
-      icon: <Globe className="w-8 h-8 text-vibrant-purple" />,
-      number: "500+",
-      label: "Cities Served",
-    },
-    {
-      icon: <Award className="w-8 h-8 text-vibrant-amber" />,
-      number: "99.9%",
-      label: "Quality Rating",
-    },
-  ];
+  // const stats = [
+  //   {
+  //     icon: <Users className="w-8 h-8 text-vibrant-blue" />,
+  //     number: "10,000+",
+  //     label: "Happy Customers",
+  //   },
+  //   {
+  //     icon: <Clock className="w-8 h-8 text-vibrant-emerald" />,
+  //     number: "20+",
+  //     label: "Years Experience",
+  //   },
+  //   {
+  //     icon: <Globe className="w-8 h-8 text-vibrant-purple" />,
+  //     number: "500+",
+  //     label: "Cities Served",
+  //   },
+  //   {
+  //     icon: <Award className="w-8 h-8 text-vibrant-amber" />,
+  //     number: "99.9%",
+  //     label: "Quality Rating",
+  //   },
+  // ];
 
   const testimonials = [
     {
@@ -161,7 +161,7 @@ const HomePage = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
+      {/* <section className="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -179,7 +179,7 @@ const HomePage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Company Intro */}
       <section className="py-16 bg-white">
@@ -233,11 +233,11 @@ const HomePage = () => {
                 to={category.link}
                 className="group p-8 bg-white rounded-xl shadow-soft hover:shadow-xl transition-all duration-300 border hover:border-vibrant-blue card-hover"
               >
-                <div
+                {/* <div
                   className={`w-16 h-16 rounded-lg bg-gradient-to-r ${category.gradient} flex items-center justify-center mb-6 mx-auto group-hover:animate-float`}
                 >
                   {category.icon}
-                </div>
+                </div> */}
                 <h3 className="text-xl font-semibold text-plumbing-dark mb-4 group-hover:text-vibrant-blue transition-colors text-center">
                   {category.title}
                 </h3>

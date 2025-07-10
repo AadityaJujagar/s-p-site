@@ -84,9 +84,9 @@ const ProductModal: React.FC<ProductModalProps> = ({
                       <th className="px-3 sm:px-6 py-2 sm:py-3 text-center font-semibold responsive-text-xs md:responsive-text-sm">
                         Packing
                       </th>
-                      <th className="px-3 sm:px-6 py-2 sm:py-3 font-semibold responsive-text-xs md:responsive-text-sm text-center">
+                      {/* <th className="px-3 sm:px-6 py-2 sm:py-3 font-semibold responsive-text-xs md:responsive-text-sm text-center">
                         Rate / Unit
-                      </th>
+                      </th> */}
                     </tr>
                   </thead>
                   <tbody>
@@ -103,9 +103,9 @@ const ProductModal: React.FC<ProductModalProps> = ({
                         <td className="px-3 sm:px-6 py-3 sm:py-4 text-plumbing-dark font-medium responsive-text-xs md:responsive-text-sm text-center">
                           {variant.packing}
                         </td>
-                        <td className="px-3 sm:px-6 py-3 sm:py-4 text-plumbing-dark font-medium responsive-text-xs md:responsive-text-sm text-center">
+                        {/* <td className="px-3 sm:px-6 py-3 sm:py-4 text-plumbing-dark font-medium responsive-text-xs md:responsive-text-sm text-center">
                           {variant.rate}
-                        </td>
+                        </td> */}
                       </tr>
                     ))}
                   </tbody>
